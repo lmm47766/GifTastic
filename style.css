@@ -1,0 +1,63 @@
+body{
+    background: #cdd2d3;
+    background-size: 100%;
+}
+
+div {
+    margin:10px;
+}
+
+
+img{
+	width: 100%;
+    height: 80%;
+
+}
+#addButton{
+    margin:5px;
+}
+
+.gifs {
+    margin: 10px 0px;
+    float: left;
+    height: 175px;
+    padding: 3px;
+    border-color: #660000;
+    border-radius: 5px;
+    border-style: groove;
+}
+
+
+.col-xs-9, .col-xs-3 {
+    padding: 0;
+    margin: 0;
+
+}
+
+.col-xs-3 {
+    padding-left: 10px;
+}
+
+button {
+    color: white;
+    background: #660000;
+    margin: 5px;
+}
+
+h1{
+    text-align: center;
+    color: #660000;
+    font-family: 'Racing Sans One', cursive;
+}
+
+p{  
+    /*color: white;*/
+    /*background: #057a91;*/
+    font-weight: bold;
+    text-align: center;
+    /*border-style: groove;*/
+    /*border-radius: 5px;*/
+    /*border-color: #660000;*/
+}
+
+
