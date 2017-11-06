@@ -8,9 +8,11 @@ var sportsTeams = ["Barcelona", "Real Madrid", "Liverpool", "PSG", "Club America
 
 function showcontent() {
       $("#gifArea").empty();
-      var tv = $(this).attr("teamName");
+      var team = $(this).attr("teamName");
       var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=IelN2EsP53lCGIzF6kjIakIkgXbSa3bL&q="
-                     + tv + "&limit=10&offset=0&rating=G&lang=en";
+                     + team + "&limit=10&offset=0&rating=G&lang=en";
+
+       console.log(queryURL);              
 
       $.ajax({
 
@@ -19,7 +21,6 @@ function showcontent() {
 
       }).done(function(response){
 
-        jsondata = $("<div>");
         
         //Creating the gifs and rating for each gif
         for (var i = 0; i < 10; i++) {
@@ -31,7 +32,7 @@ function showcontent() {
           image.attr("data-animate",response.data[i].images.original.url);
 
 
-          image.addClass("clicks");
+          image.addClass("gif");
           var newDiv = $("<div>")
           newDiv.addClass("col-xs-4 col-xs-12 gifs");
           newDiv.append(rating, image);
@@ -43,7 +44,7 @@ function showcontent() {
 
 };
 
-$(document).on("click", ".clicks", function(){
+$(document).on("click", ".gif", function(){
 
         var state = $(this).attr("data-state");
 

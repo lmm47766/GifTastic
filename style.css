@@ -13,6 +13,7 @@ img{
     height: 80%;
 
 }
+
 #addButton{
     margin:5px;
 }
@@ -20,7 +21,7 @@ img{
 .gifs {
     margin: 10px 0px;
     float: left;
-    height: 175px;
+    height: 200px;
     padding: 3px;
     border-color: #660000;
     border-radius: 5px;
@@ -31,7 +32,6 @@ img{
 .col-xs-9, .col-xs-3 {
     padding: 0;
     margin: 0;
-
 }
 
 .col-xs-3 {
